@@ -1,0 +1,24 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plex79/css-all.git"
+  },
+  "author": "plex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plex79/css-all/issues"
+  },
+  "homepage": "https://github.com/plex79/css-all#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-uglify": "^3.0.1"
+  }
+}
