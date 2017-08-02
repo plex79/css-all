@@ -35,8 +35,21 @@
 <body>
 
     <div class="container">
-    <button>columns</button>
-
+    <button id="guzik-col">columns</button>
+       <section class="blogs" id="blogs">
+           <article class="blog">
+               <h2>Lorem ipsum dolor sit.</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia fuga qui natus quod dignissimos laudantium.</p>
+           </article>
+           <article class="blog">
+               <h2>Expedita, itaque necess itatibus repellat.</h2>
+               <p>Cum obcaecati iusto illum, earum nihil? Enim ratione earum accusamus, dolorem ipsa obcaecati quaerat, unde, amet minima tenetur est alias inventore eum?</p>
+           </article>
+           <article class="blog">
+               <h2>Odit iste possimus mollitia?</h2>
+               <p>Omnis nostrum quae repellendus numquam nemo, vitae voluptatum accusamus adipisci eum incidunt modi nisi velit minima et deleniti placeat voluptas natus? Quibusdam, eaque, magnam. Amet dignissimos voluptatum eligendi, ab temporibus.</p>
+           </article>
+       </section>
 
 
 
@@ -46,7 +59,15 @@
     <script src="js/jquery-3.2.1.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        let columns = document.getElementById("guzik-col"),
+            secBlogs = document.getElementById("blogs");
 
+            columns.onclick = function() {
+                secBlogs.className = "columns";
+            }
+
+    </script>
 </body>
 
 </html>
