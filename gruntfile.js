@@ -24,13 +24,6 @@ module.exports = function(grunt) {
         'footer': ''
       }
     },
-    sass: {
-      dist: {
-        files: {
-          '_dev/css/style.css' : '_dev/scss/style.scss'
-        }
-      }
-    },
     cssmin: {
       task: {
         src: ['_dev/css/style.css'], 
@@ -43,13 +36,13 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['_dev/js/*.js','_dev/scss/*.scss'],
-      tasks: ['uglify','sass', 'cssmin']
+      files: ['_dev/js/*.js', '_dev/css/*.css'],
+      tasks: ['uglify', 'cssmin']
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-sass');
+  
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
