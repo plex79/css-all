@@ -30,15 +30,20 @@ module.exports = function(grunt) {
         dest: '_final/css/style.min.css'
       },
       options: {
-        'banner': null,
-        'keepSpecialComments': '*',
-        'report': 'min'
+        banner: null,
+        keepSpecialComments: '*',
+        report: 'min'
       }
+    },
+    watch: {
+      files: ['_dev/js/*.js', '_dev/css/*.css'],
+      tasks: ['uglify', 'cssmin']
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['uglify', 'cssmin']);
+  grunt.registerTask('default', ['watch']);
 };
