@@ -29,7 +29,10 @@ sup:hover span {
 	opacity: 1;
 } */
 /* cite end */
-.ttip{
+
+
+/* ---------------tip------------------- */
+/* .ttip{
 	position: relative;
 }
 .tip {
@@ -60,4 +63,42 @@ sup:hover span {
 	visibility: visible;
 	opacity: 1;
 	margin-left: 1em;
+} */
+/* ---------------tip end------------------- */
+
+.closeBtn {
+	position: absolute;
+    font-size: 5em;
+    color: red;
+    right: 2px;
+    top: 0;
+}
+.overlay {
+	position: fixed;
+	width: 0;
+	height: 100%;
+	background: rgba(0, 0, 0, .7);
+	overflow-x: hidden;
+	z-index: 100;
+	top: 0;
+}
+.overlay__content {
+	text-align: center;
+    font-size: 2em;
+}
+.overlay__content a {
+	color: white;
+	display: block;
+}
+.openOverlay {
+	position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
